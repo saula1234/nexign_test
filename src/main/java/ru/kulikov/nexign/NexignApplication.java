@@ -20,7 +20,7 @@ public class NexignApplication {
 
 	@Bean(name = "parsedFile")
 	public Trie readFile() throws IOException {
-		List<String> lines = Files.readAllLines(Paths.get("C:\\Users\\kulik\\Desktop\\textfile\\file.txt"));
+		List<String> lines = Files.readAllLines(Paths.get("file.txt"));
 
 		Trie root = new Trie(' ');
 		for (String line: lines) {
