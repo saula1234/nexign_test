@@ -43,10 +43,6 @@ public class NexignApplication {
 		}
 		}
 
-		System.out.println(lines);
-
-		System.out.println(allWords);
-
 		Trie root = new Trie(' ');
 		for (String line: allWords) {
 			root.insert(line);
