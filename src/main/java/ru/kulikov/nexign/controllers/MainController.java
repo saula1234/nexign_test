@@ -17,7 +17,7 @@ public class MainController {
     }
 
     @GetMapping(value = "/word-count")
-    public ResponseEntity<Integer> uploadVideo(@RequestBody String word) {
+    public ResponseEntity<Integer> findCountOfWordEndpoint(@RequestBody String word) {
 
         Integer result = parsedFile.findCountOfWord(word);
 
